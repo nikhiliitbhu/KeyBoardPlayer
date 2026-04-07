@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.keyboard-container {
+    width: 80vw;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.key {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.key:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.key:active {
+    background-color: #d0d0d0;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.space-key {
+    width: 420px;
+}
+
+@media (max-width: 600px) {
+    .key {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .space-key {
+        width: 280px;
+    }
+
+    .keyboard-container {
+        width: 95vw;
+        max-width: none;
+        padding: 15px;
+    }
+
+    .row {
+        gap: 6px;
+    }
+
+    .keyboard {
+        gap: 6px;
+    }
+}
