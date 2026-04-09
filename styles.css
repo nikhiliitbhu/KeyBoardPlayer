@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
@@ -90,4 +91,9 @@ body {
     .keyboard {
         gap: 6px;
     }
+}
+
+h1{
+    color: red;
+    text-shadow: yellow 1px 1px, orange 2px 2px, pink 3px 3px;
 }
